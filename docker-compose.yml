@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  qobuz:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: qobuz-app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: unless-stopped
+    # Optional: mount code as volume for local development
+    # volumes:
+    #   - ./:/app
