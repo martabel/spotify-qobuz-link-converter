@@ -31,7 +31,7 @@ def root():
                 padding: 0;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: start;
                 height: 100vh;
             }
 
@@ -111,7 +111,7 @@ def process_input(spotify: str):
                 padding: 0;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: start;
                 height: 100vh;
             }}
 
